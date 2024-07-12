@@ -10,39 +10,67 @@
 
 <body>
   <div>
-    <h2>Placar</h2>
-    <p>
-      Jogador1: 0 <br>
-      Jogador2: 0
+    <h1># Jogo da Velha #</h1>
+    <div class="placar-centralizar">
+      <p class="jogador azul">
+        Jogador <span class="letra">X</span>
+        <br>
+        <span class="placar-x">0</span>
+      </p>
+      <p class="jogador verde">
+        Jogador <span class="letra">O</span> <br>
+        <span class="placar-o">0</span>
+      </p>
+    </div>
+    <p class="status">
+      xxxx
     </p>
-    <button>Reiniciar</button>
   </div>
-  <div>
+  <div class="tabuleiro">
     <div>
-      <div class="tabuleiro-quadrado">
+      <div class="tabuleiro-quadrado tabuleiro-quadrado-border-left tabuleiro-quadrado-border-top" data-linha="0" data-coluna="0">
+        
       </div>
-      <div class="tabuleiro-quadrado">
+      <div class="tabuleiro-quadrado tabuleiro-quadrado-border-top" data-linha="0" data-coluna="1">
+        
       </div>
-      <div class="tabuleiro-quadrado">
+      <div class="tabuleiro-quadrado tabuleiro-quadrado-border-top tabuleiro-quadrado-border-rigth" data-linha="0" data-coluna="2">
+        
       </div>
     </div>
     <div>
-     <div class="tabuleiro-quadrado">
+     <div class="tabuleiro-quadrado tabuleiro-quadrado-border-left" data-linha="1" data-coluna="0">
+       
      </div>
-     <div class="tabuleiro-quadrado">
+     <div class="tabuleiro-quadrado" data-linha="1" data-coluna="1">
+       
      </div>
-     <div class="tabuleiro-quadrado">
+     <div class="tabuleiro-quadrado tabuleiro-quadrado-border-rigth" data-linha="1" data-coluna="2">
+       
      </div>
     </div>
     <div>
-     <div class="tabuleiro-quadrado">
+     <div class="tabuleiro-quadrado tabuleiro-quadrado-border-left tabuleiro-quadrado-border-bottom" data-linha="2" data-coluna="0">
+       
      </div>
-     <div class="tabuleiro-quadrado">
+     <div class="tabuleiro-quadrado tabuleiro-quadrado-border-bottom" data-linha="2" data-coluna="1">
+       
      </div>
-     <div class="tabuleiro-quadrado">
+     <div class="tabuleiro-quadrado tabuleiro-quadrado-border-rigth tabuleiro-quadrado-border-bottom" data-linha="2" data-coluna="2">
+       
      </div>
     </div>
   </div>
+  
+  <div class="container-botoes">
+    <button name="reiniciar-tabuleiro"  >Reiniciar Tabuleiro</button>
+    <button name="reiniciar-placar">Reiniciar Placar</button>
+  </div>
+  
+  <audio src="assets/audio/aplausos.mp3">assets/audio/aplausos.mp3</audio>
+  
+  <script src="jogovelha.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </body>
 
 </html>

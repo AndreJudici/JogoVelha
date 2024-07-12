@@ -1,6 +1,92 @@
+body {
+  background-color: #BFC0C8;
+}
+
+.tabuleiro {
+  text-align: center;
+}
+
+h1 {
+  border: double 5px black;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  text-shadow: #9FA0B0 5px 5px;
+}
+
 .tabuleiro-quadrado {
   border: 1px solid black;
-  width: 20px;
-  height: 20px;
+  width: 100px;
+  height: 100px;
   display: inline-block;
+  font-size: 108px;
+  text-align: center;
+}
+
+.tabuleiro-quadrado-border-left {
+  border-left: none;
+}
+
+.tabuleiro-quadrado-border-top {
+  border-top: none;
+}
+
+.tabuleiro-quadrado-border-rigth {
+  border-right: none;
+}
+
+.tabuleiro-quadrado-border-bottom {
+  border-bottom: none;
+}
+
+.status {
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.verde {
+  color: green;
+}
+
+.azul {
+  color: blue;
+}
+
+.jogador {
+  display: inline-block;
+  margin-left: 55px;
+  margin: auto;
+  font-size: 1.2rem;
+  width: 100px;
+  font-weight: 500;
+}
+
+.placar-x, .placar-o{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 35px;
+}
+
+.letra {
+  font-size: 1.5rem;
+}
+
+.placar-centralizar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-botoes {
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-around;
+}
+
+button {
+  height: 35px;
+  border-radius: 10px;
+  background-color: #9FA0B0;
+  font-weight: 500;
+  width: 40%;
 }
