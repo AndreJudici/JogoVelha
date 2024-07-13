@@ -1,5 +1,8 @@
 body {
   background-color: #BFC0C8;
+  border: 6px dotted black;
+  padding: 5%;
+ 
 }
 
 .tabuleiro {
@@ -12,6 +15,7 @@ h1 {
   padding: 5px;
   border-radius: 10px;
   text-shadow: #9FA0B0 5px 5px;
+  margin-top: 0;
 }
 
 .tabuleiro-quadrado {
@@ -21,6 +25,8 @@ h1 {
   display: inline-block;
   font-size: 108px;
   text-align: center;
+  -webkit-text-stroke: 0.1rem black;
+  color: #56565E;
 }
 
 .tabuleiro-quadrado-border-left {
@@ -43,14 +49,15 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   font-style: italic;
+  color: #56565E;
 }
 
 .verde {
-  color: green;
+  color: #44B253;
 }
 
 .azul {
-  color: blue;
+  color: #0C83E2;
 }
 
 .jogador {
@@ -60,6 +67,7 @@ h1 {
   font-size: 1.2rem;
   width: 100px;
   font-weight: 500;
+  -webkit-text-stroke: 0.05rem black;
 }
 
 .placar-x, .placar-o{
